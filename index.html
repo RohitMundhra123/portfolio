@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -16,17 +20,19 @@
             <div class="container">
                 <nav>
                     <img src="image\logo.png" class="logo">
-                    <ul>
+                    <ul id="sidemenu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
+                        <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <header class="wrap">
                     <div class="header-text">
                         <p>Student</p>
-                        <h1>Hi, I am <span>Rohitttt</span> <br>Mundhra</h1>
+                        <h1>Hi, I am <span>Rohit</span> <br>Mundhra</h1>
                     </div>
 
                     <div class="image">
@@ -323,6 +329,18 @@
 
         });
 
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
     </script>
 
 </body>
