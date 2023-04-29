@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/bdf864f866.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- ------------------header---------------------- -->
+    <div id="conParentDiv">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="image\logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <header class="wrap">
+                    <div class="header-text">
+                        <p>Student</p>
+                        <h1>Hi, I am <span>Rohit</span> <br>Mundhra</h1>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/finalbg.png" alt="img">
+                    </div>
+
+                </header>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, deleniti! Iste sunt amet
+                        beatae possimus ratione. Accusamus veniam recusandae repudiandae eius vitae quidem iure earum,
+                        tenetur atque, blanditiis dolor ratione?
+                    </p>
+                    <div class="tab_titles">
+                        <p class="tab-links active" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('projects')">
+                            Projects
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Android App Development</span><br>Intermediate</li>
+                            <li><span>Programming In Java</span><br>Intermediate</li>
+                            <li><span>Programming In C/C++</span><br>Skilful</li>
+                            <li><span>Embedded System</span><br>Basic<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Smart Health Box</span><br>Jan 2023-March 2023<br>Created an App which has two
+                                mode manual and device which can connect to device and predict heart disease</li>
+                            <li><span>ROBOCON</span><br>Apr 2022 - July 2022<br>This is the team project where we are
+                                made the bot which play an game 'LAGORI' for national level competition</li>
+                            <li><span>Apni Dukan</span><br>Nov 2019 - Feb 2020<br>It was a group project where we made
+                                an windows application where we can sell and buy things using Netbeans and SQL</li>
+                            <li><span>VOCALS</span><br>Jun 2019 - Jul 2019<br>This was a team project where we tend to
+                                make a Voice Automated local Switch which helps to turn on/off the surrounding
+                                electronics appliances using our voice through an application in our mobile.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Assistant Co-ordinator KIIT Robotics Society</li>
+                            <li><span>October 2022 - Feburary 2023 </span><br>Worked as mentor for Basic Embedded System
+                                to KIIT Students</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------services----------------------- -->
+    <!-- <div id="services">
+    <div class="container">
+        <h1 class="subtitle">My  Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android App Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit praesentium ipsam tempora maxime nemo, cumque soluta eum, amet similique saepe nihil corporis aperiam non sint cupiditate error maiores velit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Embedded C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit praesentium ipsam tempora maxime nemo, cumque soluta eum, amet similique saepe nihil corporis aperiam non sint cupiditate error maiores velit.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <!-- <----------------------PORTFOLIO=------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <!-- <img src="image/work-1/login.jpg"> -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="image/work-1/login.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/signup.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/home.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/entry.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/glucose.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/nav bar.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/dashboard.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/answer.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="image/work-1/login.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/signup.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/home.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/entry.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/glucose.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/nav bar.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/dashboard.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="image/work-1/answer.jpg">
+                                <div class="layer">
+                                    <h3>Smart Health Box</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
+                                        ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
+                                        quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+    </script>
+
+</body>
+
+</html>
