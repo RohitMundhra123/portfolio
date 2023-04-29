@@ -485,5 +485,8 @@ display: none;
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    #header{
+        height: 100vh;
+    }
 }
 
