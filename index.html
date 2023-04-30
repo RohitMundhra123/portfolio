@@ -9,6 +9,7 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/bdf864f866.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
@@ -30,14 +31,12 @@
                 </nav>
                 <header class="wrap">
                     <div class="header-text">
-                        <p>Student</p>
-                        <h1>Hi, I am <span>Rohit</span> <br>Mundhra</h1>
+                        <p>Rohit <span>Mundhra</span></p>
+                        <h1>Hi, I am <br><span class="auto-type"></span></h1>
                     </div>
-
                     <div class="image">
                         <img src="image/bg.png" alt="img">
                     </div>
-
                 </header>  
             </div>
         </div>
@@ -173,7 +172,7 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="image/background.png" download class="btn2">Download CV</a>
+                <a href="image/Rohit Mundhra.pdf" download class="btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -254,7 +253,15 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
-
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+    var typed=new Typed(".auto-type",{
+        strings: ["Android App Developer"," Organizer"," Coder"," Student"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+    })
+</script>
 </body>
 
 </html>

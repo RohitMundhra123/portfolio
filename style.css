@@ -31,7 +31,7 @@ body {
 }
 
 .image img{
-    width: 50vw;
+    width: 46vw;
     height: auto;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: auto;
 }
 
 nav {
@@ -79,20 +79,35 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    /* margin-top: 20%; */
     font-size: 30px;
+    
+}
 
+.header-text p{
+    font-size: 70px;
+    color: #ff004f;
+    font-family: 'Secular One';
+}
+
+p span{
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Secular One';
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 10px;
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    font-size: 50px;
+    color: #dd5723;
 }
 
+nav img{
+    height: 50px;
+}
 
 
 /* -----------------about----------------- */
@@ -488,11 +503,36 @@ display: none;
     #header{
         height: 100vh;
     }
+    .header-text p{
+        font-size: 35px;
+        color: #ff004f;
+        font-family: 'Secular One';
+    }
+    
+    p span{
+        color: #fff;
+        font-size: 35px;
+        font-family: 'Secular One';
+    }
+    
+    .header-text h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .header-text h1 span {
+        font-size: 25px;
+        color: #dd5723;
+    }
 }
 #mssg{
     color: #61b752;
     margin-top: -40px;
     display: block;
 }
+
+    
+    
+
 
 
