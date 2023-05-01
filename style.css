@@ -221,7 +221,6 @@ nav img {
     margin: 20px 0;
     font-size: 20px;
     color: grey;
-    line-height: 1;
 }
 
 .tab-contents ul li span {
@@ -459,15 +458,6 @@ nav img {
     transition: transform 0.5s;
 }
 
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-    color: black;
-}
-
-.swiper .swiper-pagination {
-    background: #fff;
-}
-
 .layer {
     display: none;
     width: 100%;
@@ -628,9 +618,9 @@ form .btn2 {
     height: 8px;
     width:70%;
     border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgb(255, 255, 255);
   }
   
   .skill-progress {
@@ -849,7 +839,7 @@ nav .fas {
     }
 
     .skill-progress {
-        height: 5%;
+        height: 100%;
         border-radius: 5px;
         transition: width 1s ease-in-out;
       }
@@ -909,16 +899,21 @@ nav .fas {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .tab-contents ul li span {
         color: #b54769;
         font-size: 18px;
     }
     .bar {
-        height: 3px;
+        height: 5px;
         margin-top: 3px;
         margin-bottom: 8px;
     }   
+    .skill-progress {
+        height: 100%;
+        border-radius: 5px;
+        transition: width 1s ease-in-out;
+      }
 }
 
 @media (max-width: 600px) {
@@ -927,7 +922,8 @@ nav .fas {
         font-size: 13px;
     }
     .about_col_2 .aboutme{
-        font-size: 13px;
+        font-size: 15px;
+        padding-left: 30px;
     }
     
 }
