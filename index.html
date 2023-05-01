@@ -16,6 +16,12 @@
 
 <body>
     <!-- ------------------header---------------------- -->
+    <div class="loader">
+		<span></span>
+		<span></span>
+		<span></span>
+		Loading...
+	</div>
     <div id="header">
         <div class="container">
             <nav>
@@ -47,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="about_col_1">
-                    <img src="image/user.png">
+                    <img src="image/user.png" alt="Profile Picture">
                 </div>
                 <div class="about_col_2">
                     <h1 class="subtitle">About Me</h1>
@@ -79,43 +85,43 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>
-                                <p><span>Programming In C/C++</span><span style="float: right; padding-right:30% ; color: grey;">Skillful</span></p>
+                                <p><span>Programming In C/C++</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
                                  <div class="bar">
                                    <div class="skill-progress c" data-percentage="80"></div>
                                  </div>
                             </li>
                           <li>
-                            <p><span>Android App Development</span><span style="float: right; padding-right:30%; color: grey;">Intermediate</span></p>
+                            <p><span>Android App Development</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
                             <div class="bar">
                               <div class="skill-progress android" data-percentage="70"></div>
                               </div>
                           </li>
                           <li>
-                            <p><span>Programming In Java</span><span style="float: right; padding-right:30%; color: grey;">Intermediate</span></p>
+                            <p><span>Programming In Java</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
                             <div class="bar">
                               <div class="skill-progress java" data-percentage="70"></div>
                             </div>
                           </li>
                           <li>
-                            <p><span>Embedded System</span><span style="float: right; padding-right:30%; color: grey;">Begginer</span></p>
+                            <p><span>Embedded System</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
                              <div class="bar">
                                <div class="skill-progress embedded" data-percentage="50"></div>
                              </div>
                            </li>
                            <li>
-                            <p><span>Front End</span><span style="float: right;padding-right:30%;  color: grey;">Begginer</span></p>
+                            <p><span>Front End</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
                              <div class="bar">
                                <div class="skill-progress front-end" data-percentage="50"></div>
                              </div>
                            </li>
                           <li>
-                           <p><span>Leading Team</span><span style="float: right;padding-right:30%;  color: grey;">Skillful</span></p>
+                           <p><span>Leading Team</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
                             <div class="bar">
                               <div class="skill-progress team" data-percentage="80"></div>
                             </div>
                           </li>
                           <li>
-                            <p><span>Public Speaking</span><span style="float: right; padding-right:30%; color: grey;">Skillful</span></p>
+                            <p><span>Public Speaking</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
                              <div class="bar">
                                <div class="skill-progress public" data-percentage="80"></div>
                              </div>
@@ -128,27 +134,27 @@
                           <li>
                             <span class="project-name">Smart Health Box</span><br>
                             <span class="project-date">Jan 2023 - Mar 2023</span>
-                            <p>Created an app which has two modes: manual and device. The app can connect to a device and predict heart disease.</p>
+                            Created an app which has two modes: manual and device. The app can connect to a device and predict heart disease.
                           </li>
                           <li>
                             <span class="project-name">API for Heart Disease Prediction</span><br>
                             <span class="project-date">Jan 2023 - Mar 2023</span>
-                            <p>Created an API using Flask for heart disease prediction and hosted it so that it can be used in our app or website.<br>API URL: https://smart-health-bo2c.onrender.com</p>
+                            Created an API using Flask for heart disease prediction and hosted it so that it can be used in our app or website.<br>API URL: https://smart-health-bo2c.onrender.com
                           </li>
                           <li>
                             <span class="project-name">ROBOCON</span><br>
                             <span class="project-date">Apr 2022 - Jul 2022</span>
-                            <p>Developed a bot to play the game 'LAGORI' for a national-level competition.</p>
+                            Developed a bot to play the game 'LAGORI' for a national-level competition.
                           </li>
                           <li class="hidden-projects" style="display: none;">
                             <span class="project-name">Apni Dukan</span><br>
                             <span class="project-date">Nov 2019 - Feb 2020</span>
-                            <p>Created a Windows application using Netbeans and SQL to buy and sell items.</p>
+                            Created a Windows application using Netbeans and SQL to buy and sell items.
                           </li>
                           <li class="hidden-projects" style="display: none;">
                             <span class="project-name">VOCALS</span><br>
                             <span class="project-date">Jun 2019 - Jul 2019</span>
-                            <p>Developed a voice-activated local switch that can turn on/off surrounding electronics appliances using a mobile app.</p>
+                            Developed a voice-activated local switch that can turn on/off surrounding electronics appliances using a mobile app.
                           </li>
                         </ul>
                         <button id="show-more" onclick="toggleProjects()">See More</button>
@@ -156,18 +162,18 @@
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022 - Present</span><br><p>Assistant Co-ordinator KIIT Robotics Society</p></li>
-                            <li><span>2023 </span><br><p>Event Co-ordinator KONQUEST<br>Intra-College Level Robotics Competition</p></li>
-                            <li><span>October 2022 - Feburary 2023 </span><br>Worked as mentor for Basic Embedded System
-                                to KIIT Students</li>
+                            <li><span>2022 - Present</span><p>Assistant Co-ordinator KIIT Robotics Society</p></li>
+                            <li><span>2023 </span><p>Event Co-ordinator KONQUEST<br>Intra-College Level Robotics Competition</p></li>
+                            <li><span>October 2022 - Feburary 2023 </span><p>Worked as mentor for Basic Embedded System
+                                to KIIT Students</p></li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><br><span class="degree-date">2020-Present</span>Kalinga Institute of Industrial Technology</li><br>
-                            <li><span class="degree-name">CBSE Senior Secondary Level Examination</span><br><span class="degree-date">2020</span>DAV Higher Secondary School</p></li><br>
-                            <li><span class="degree-name">CBSE Secondary Level Examination</span><br><span class="degree-date">2018</span>DAV Higher Secondary School</p></li>
+                            <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><span class="degree-date">2020-Present</span>Kalinga Institute of Industrial Technology</li><br>
+                            <li><span class="degree-name">CBSE Senior Secondary Level Examination</span><span class="degree-date">2020</span>DAV Higher Secondary School</p></li><br>
+                            <li><span class="degree-name">CBSE Secondary Level Examination</span><span class="degree-date">2018</span>DAV Higher Secondary School</p></li>
                         </ul>
                     </div>
                 </div>

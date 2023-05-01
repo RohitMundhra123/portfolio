@@ -123,10 +123,12 @@ function isElementInViewport(element) {
   
   window.addEventListener('scroll', animateBars);
   
+// ------------------------opening----------------------  
   
+window.addEventListener("load", function() {
+    document.querySelector(".loader").classList.add("loaded");
+});
   
-  
-
 
 
   

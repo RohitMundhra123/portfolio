@@ -1,3 +1,46 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #007bff;
+    animation: bounce 0.5s alternate infinite ease;
+    margin-right: 10px;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.1s;
+    margin-right: 10px;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.2s;
+    margin-right: 10px;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+/* Hide loader once the page has finished loading */
+.loaded .loader {
+    display: none;
+}
 /* --------------------overall------------------ */
 * {
     margin: 0;
@@ -58,12 +101,13 @@ body {
 }
 
 .image img {
+    padding-top: 40px;
     width: 46vw;
     height: auto;
 }
 
 .container{
-    padding: 30px 5%;
+    padding: 40px 5%;
 }
 
 /* ------------------------navbar------------- */
@@ -147,7 +191,7 @@ nav img {
 
 /* -----------------------image---------------- */
 
-.row {
+/* .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -162,8 +206,32 @@ nav img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-}
+} */
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about_col_1 {
+    flex-basis: 35%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: -10px 10px 5px 5px grey;
+  }
+  
+  .about_col_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about_col_1:hover {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255);
+  }
+    
 /* ---------------------text------------- */
 
 .about_col_2 {
@@ -243,7 +311,9 @@ nav img {
         /* -----------------------------------projects--------------------------------------- */
         #projects{
             padding-top: 20px;
+            padding-right: 20px;
           }
+
           #projects ul {
             margin: 0;
             padding: 0;
@@ -254,6 +324,7 @@ nav img {
             margin: 0 0 25px;
             border-left: 5px solid #ff004f;
             padding-left: 20px;
+            padding-right: 10px;
           }
           
           #projects li:last-child {
@@ -303,6 +374,7 @@ nav img {
           /* ---------------------------------experience---------------------------- */
           #experience{
             padding-top: 20px;
+            padding-right: 20px;
           }
 
           #experience ul {
@@ -350,6 +422,7 @@ nav img {
             /* ------------------------------education-------- */
             #education {
                 padding-top: 20px;
+                padding-right: 20px;
               }
               
               #education ul {
@@ -610,8 +683,10 @@ form .btn2 {
     margin-top: -40px;
     display: block;
 }
-
-
+/* --------------------------------------skill------------------ */
+.about_col_2 .skill-list{
+    padding-right: 30%;
+}
 
 .bar {
     display: block;
@@ -826,7 +901,7 @@ nav .fas {
     }
     .tab-contents ul li span {
         color: #b54769;
-        font-size: 15px;
+        font-size: 18px;
     }
     .bar {
         height: 3px;
@@ -896,16 +971,211 @@ nav .fas {
         font-size: 25px;
         color: #dd5723;
     }
+
+    /* -----------------------------------projects--------------------------------------- */
+    #projects{
+        padding-top: 20px;
+        padding-right: 20px;
+      }
+      
+      #projects ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      
+      #projects li {
+        margin: 0 0 25px;
+        border-left: 5px solid #ff004f;
+        padding-left: 20px;
+        padding-right: 10px;
+      }
+      
+      #projects li:last-child {
+        margin-bottom: 0;
+      }
+      
+      #projects .project-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #b54769;
+      }
+      
+      #projects .project-date {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      #projects p {
+        font-size: 14px;
+        color: grey;
+        line-height: 1.5;
+        
+      }
+      
+      #projects .hidden-projects {
+        display: none;
+      }
+      
+      #show-more {
+        margin-top: 20px;
+        background-color: #ff004f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      #show-more:hover {
+        background-color: #b54769;
+      }
+
+      /* ---------------------------------experience---------------------------- */
+      #experience{
+        padding-top: 20px;
+        padding-right: 20px;
+      }
+
+      #experience ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        }
+        
+        #experience li {
+        margin: 0 0 25px;
+        color: white;
+        border-left: 5px solid #ff004f;
+        padding-left: 20px;
+        }
+        
+        #experience ul p{
+            line-height: 1.2;
+            font-size: 14px;
+        }
+
+        #experience li:last-child {
+        margin-bottom: 0;
+        }
+        
+        #experience li span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #b54769;
+        display: block;
+        line-height: 0;
+        }
+        
+        #experience li span:before {
+        content: '\f073';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        margin-right: 10px;
+        color: #ff004f;
+        }
+        
+        #experience li:last-child {
+        margin-bottom: 0;
+        }
+
+        /* ------------------------------education-------- */
+        #education {
+            padding-top: 20px;
+            padding-right: 20px;
+          }
+          
+          #education ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+          }
+          
+          #education li {
+            margin: 0 0 25px;
+            border-left: 5px solid #ff004f;
+            font-size: 18px;
+            color: #666;
+            line-height: 1;
+            padding-left: 20px;
+          }
+          
+          #education li:last-child {
+            margin-bottom: 0;
+          }
+          
+          #education .degree-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #b54769;
+          }
+          
+          #education .degree-date {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            display: block;
+          }
+          
+          #education li span {
+            display: block;
+            margin-bottom: 5px;
+          }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .header-text{
+    width: 100%;
+    margin-top: 50%;
+    font-size: 16px;
+    }
+
+    .image img {
+        padding-top: 50%;
+        width: 46vw;
+        height: auto;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+    .header-text p {
+        font-size: 40px;
+        line-height: 1;
+        color: #ff004f;
+        font-family: 'Secular One';
+    }
+    p span {
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Secular One';
+    }
+    .header-text h1 span {
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Secular One';
+    }
+  }
 
 @media (max-width: 1400px) {
     .tab-contents ul li span {
         color: #b54769;
-        font-size: 18px;
+        font-size: 20px;
+    }
+    .container{
+        height: 100vh;
     }
     .bar {
         height: 5px;
+        width: 90%;
         margin-top: 3px;
         margin-bottom: 8px;
     }   
@@ -914,12 +1184,16 @@ nav .fas {
         border-radius: 5px;
         transition: width 1s ease-in-out;
       }
+    .about_col_2 .skill-list{
+        padding-right: 10%;
+    }
 }
 
 @media (max-width: 600px) {
     .tab-contents ul li span {
         color: #b54769;
-        font-size: 13px;
+        font-size: 16px;
+        line-height: 2;
     }
     .about_col_2 .aboutme{
         font-size: 15px;
