@@ -2,14 +2,43 @@
     opacity: 0;
     filter: blur(10px);
     transform: translateX(-100%);
-    transition: all 4s;
+    transition: all 2s;
 }
 
 .hidden1{
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(-100%);
-    transition: all 4s;
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+.abt:nth-child(2){
+    transition-delay:1s ;
+}
+.nav:nth-child(1){
+    transition-delay: 0.2s; 
+}
+.nav:nth-child(2){
+    transition-delay: 0.4s; 
+}
+.nav:nth-child(3){
+    transition-delay: 0.6s; 
+}
+.nav:nth-child(4){
+    transition-delay: 0.8s; 
+}
+.nav:nth-child(5){
+    transition-delay: 1s; 
+}
+
+.work:nth-child(2){
+    transition-delay: 0.5s;
+}
+.work:nth-child(2){
+    transition-delay: 0.75s;
+}
+.work:nth-child(3){
+    transition-delay: 1s;
 }
 
 .show{
