@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+
+    </div>
     <!-- ------------------header---------------------- -->
     <div id="header">
         <div class="container">
@@ -123,7 +126,7 @@
                         </ul>
                     </div>                                     
                     
-                    <!-- <div class="tab-contents" id="projects">
+                    <div class="tab-contents" id="projects">
                         <ul>
                           <li>
                             <span class="project-name">Smart Health Box</span><br>
@@ -152,24 +155,24 @@
                           </li>
                         </ul>
                         <button id="show-more" onclick="toggleProjects()">See More</button>
-                    </div>                                         -->
+                    </div>                                        
 
-                    <!-- <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2022 - Present</span><p>Assistant Co-ordinator KIIT Robotics Society</p></li>
                             <li><span>2023 </span><p>Event Co-ordinator KONQUEST<br>Intra-College Level Robotics Competition</p></li>
                             <li><span>October 2022 - Feburary 2023 </span><p>Worked as mentor for Basic Embedded System
                                 to KIIT Students</p></li>
                         </ul>
-                    </div> -->
+                    </div>
 
-                    <!-- <div class="tab-contents" id="education">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><span class="degree-date">2020-Present</span>Kalinga Institute of Industrial Technology</li><br>
                             <li><span class="degree-name">CBSE Senior Secondary Level Examination</span><span class="degree-date">2020</span>DAV Higher Secondary School</p></li><br>
                             <li><span class="degree-name">CBSE Secondary Level Examination</span><span class="degree-date">2018</span>DAV Higher Secondary School</p></li>
                         </ul>
-                    </div> -->
+                    </div>
  
                 </div>
             </div>
@@ -177,35 +180,42 @@
     </div>
 
     <!-- ----------------------services----------------------- -->
-    <div id="services" class="hidden">
+    <div id="services" >
         <div class="container">
-            <h1 class="subtitle">My Services</h1>
-            <div class="services-list">
+            <h1 class="subtitle serv hidden">My Services</h1>
+            <div class="services-list serv hidden">
                 <div>
                     <i class="fa-brands fa-android"></i>
                     <h2>Android App Developmet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit praesentium ipsam
-                        tempora maxime nemo, cumque soluta eum, amet similique saepe nihil corporis aperiam non sint
-                        cupiditate error maiores velit.</p>
+                    <p>Android app development is the process of creating software applications that run on the Android operating system.
+                        As a beginner in Android app development, 
+                        I have worked extensively with Java and XML. 
+                        I am currently expanding my knowledge by learning Flutter, a popular mobile app development framework. 
+                    </p>
                     <p id="hidden-text1" style="display: none;">
-                        This is the hidden text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        ultricies ullamcorper lacinia. Suspendisse euismod felis ac massa posuere vestibulum. Integer
-                        feugiat nibh nisl, in pharetra mi varius vitae. Nullam vestibulum, nulla at dignissim ultricies,
-                        massa leo dignissim eros, vel vehicula leo ante in sapien.
+                        As part of my learning journey, I have contributed to a project on GitHub called Smart Health Box, 
+                        which involves calling APIs, implementing Bluetooth functionality, user authentication, and database management using Firebase. 
+                        This project has helped me gain practical experience in building real-world apps,
+                        and I am excited to continue honing my skills in mobile app development.
+                        You can check out some of my programming projects on my GitHub repository <a href="https://github.com/RohitMundhra123" target="_blank" style="font-size: 16px;"><u><b>Click Here</b></u></a>
+                    </p>
                     </p>
                     <button id="show-more1" onclick="toggleText1()">See more</button>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Embedded C</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit praesentium ipsam
-                        tempora maxime nemo, cumque soluta eum, amet similique saepe nihil corporis aperiam non sint
-                        cupiditate error maiores velit.</p>
+                    <h2>Programming</h2>
+                    <p>As a beginner programmer, I have a strong interest in programming and I am eager to learn more. 
+                        I have experience in several programming languages such as Java, C, C++, and Python. 
+                        My main focus has been on writing console applications and small scripts to automate tasks.
+                    </p>
                     <p id="hidden-text2" style="display: none;">
-                        This is the hidden text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        ultricies ullamcorper lacinia. Suspendisse euismod felis ac massa posuere vestibulum. Integer
-                        feugiat nibh nisl, in pharetra mi varius vitae. Nullam vestibulum, nulla at dignissim ultricies,
-                        massa leo dignissim eros, vel vehicula leo ante in sapien.
+                        In addition to programming, I have experience with various software development tools such as PyCharm, Visual Studio Code, and Eclipse.
+                        I am also familiar with version control systems such as Git and have experience in working with GitHub.
+                        One of my notable projects is a Java application that simulates a shopping desktop app. 
+                        The application allows users to sell, buy and search products. 
+                        The program is built using Java classes and methods, and data is stored in a MySQL database.
+                        As a beginner programmer, I am always eager to learn more and improve my skills.
                     </p>
                     <button id="show-more2" onclick="toggleText2()">See more</button>
                 </div>
@@ -220,33 +230,33 @@
             <h1 class="subtitle hidden">My Work</h1>
             <div class="work-list">
                 <div class="work hidden">
-                    <img src="image/work-1/login.jpg">
+                    <img src="image/work-1.png">
                     <div class="layer">
                         <h3>Smart Health Box</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
                             ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
                             quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/RohitMundhra123/Smart-Health-Box-Android-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work hidden">
-                    <img src="image/work-1/login.jpg">
+                    <img src="image/work-2.png">
                     <div class="layer">
-                        <h3>Smart Health Box</h3>
+                        <h3>Maze Solver</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
                             ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
                             quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/RohitMundhra123/OpenCv" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work hidden">
-                    <img src="image/work-1/login.jpg">
+                    <img src="image/work-3.png">
                     <div class="layer">
-                        <h3>Smart Health Box</h3>
+                        <h3>VOCALS</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus non ad velit
                             ipsum ducimus omnis maiores aliquam, eveniet, atque incidunt perspiciatis
                             quisquam tempore iure provident odio soluta temporibus quis voluptatum?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -254,21 +264,21 @@
         </div>
     </div>
     <!-- ----------------------------contact------------------------------ -->
-    <div id="contact" class="hidden">
+    <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left cont hidden">
                     <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>rohitm1924@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>7726021453</p>
+                    <p><a href="mailto:rohitm1924@gmail.com"><i class="fa-solid fa-paper-plane"></a></i>rohitm1924@gmail.com</p>
+                    <p><a href="tel:+917726021453"><i class="fa-solid fa-phone-volume"></a></i>7726021453</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/rohit.mundhra.902?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/mundhra243?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rohitmundhra2002" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="image/Rohit Mundhra.pdf" download class="btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right cont hidden">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>

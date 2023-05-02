@@ -143,3 +143,11 @@ hiddenElements.forEach((el)=>observer.observe(el));
 const hiddenElements1 = document.querySelectorAll(".hidden1");
 hiddenElements1.forEach((el)=>observer.observe(el));
   
+
+// -------------------preloaderr------------------
+
+var loader=document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display="none";
+})
