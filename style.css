@@ -259,7 +259,6 @@ nav img {
 }
 
 .about_col_2 p {
-    font-size: 20px;
     text-align: justify;
     margin-top: 20px;
 }
@@ -862,11 +861,6 @@ nav .fas {
         font-size: 16px;
     }
 
-    #about {
-        padding: 30px;
-        color: #ababab;
-    }
-
     .image {
         margin-top: 50%;
     }
@@ -985,6 +979,18 @@ nav .fas {
         color: #dd5723;
     }
 
+    .tab_titles {
+        display: flex;
+        margin: 20px 0 30px ;
+        color: #fff;
+    }
+
+    .tab-links {
+        margin-right: 10px;
+        font-size: 14x;
+        cursor: pointer;
+        position: relative;
+    }
     /* -----------------------------------projects--------------------------------------- */
     #projects{
         padding-top: 20px;
@@ -1202,7 +1208,7 @@ nav .fas {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .tab-contents ul li span {
         color: #b54769;
         font-size: 16px;
@@ -1210,9 +1216,22 @@ nav .fas {
     }
     .about_col_2 .aboutme{
         font-size: 15px;
-        padding-right: 30px;
     }
-    
+    .about_col_2 .skill-list{
+        font-size: 10px;
+    }
+    .tab-contents ul li span {
+        color: #b54769;
+        font-size: 10px;
+        line-height: 1;
+    }
+    .about_col_2 .skill-list{
+        padding-right: 10%;
+    }
+    .tab-links {
+        font-size: 12px;
+        margin-right: 20px;
+    }
 }
 
 
