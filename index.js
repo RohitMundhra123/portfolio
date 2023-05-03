@@ -94,6 +94,20 @@ function toggleText2() {
     }
 }
 
+function togglePortfolio() {
+    var hiddenPortfolio = document.querySelectorAll(".hidden-portfolio");
+    var showMoreButton = document.querySelector(".btn");
+    
+    for (var i = 0; i < hiddenPortfolio.length; i++) {
+      if (hiddenPortfolio[i].style.display === "none") {
+        hiddenPortfolio[i].style.display = "block";
+        showMoreButton.innerHTML = "See Less";
+      } else {
+        hiddenPortfolio[i].style.display = "none";
+        showMoreButton.innerHTML = "See More";
+      }
+    }
+  }  
 // -------------------------------skills-----------------
 
 function isElementInViewport(element) {
