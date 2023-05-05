@@ -1,345 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Website</title>
+    <title>Rohit Mundhra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/bdf864f866.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
-
-<body>
-    <div id="preloader">
-
-    </div>
-    <!-- ------------------header---------------------- -->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="image\logo.png" class="logo hidden">
-                <ul id="sidemenu">
-                    <li class="nav hidden1"><a href="#header">Home</a></li>
-                    <li class="nav hidden1"><a href="#about">About</a></li>
-                    <li class="nav hidden1"><a href="#services">Services</a></li>
-                    <li class="nav hidden1"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav hidden1"><a href="#contact">Contact</a></li>
-                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <header class="wrap">
-                <div class="header-text hidden">
-                    <p>Rohit <span>Mundhra</span></p>
-                    <h1>Hello, I am <br><span class="auto-type"></span></h1>
-                </div>
-                <div class="image hidden">
-                    <img src="image/bg.png" alt="img">
-                </div>
-            </header>
-        </div>
-    </div>
-
-    <!-- ---------------------about---------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about_col_1 abt hidden">
-                    <img src="image/user.png" alt="Profile Picture">
-                </div>
-                <div class="about_col_2 abt hidden"> 
-                    <h1 class="subtitle">About Me</h1>
-                    <p class="aboutme">
-                        Hi, I'm Rohit Mundhra, a Student from Kalinga Institute of Industrial Technology. I work in
-                        Android App Development, Embedded System, Managing Team, and Organizing Event, and I'm
-                        passionate about Coding.
-                        When I'm not working, you can find me , watching movies, and reading novels. I'm committed to my
-                        work and time period, and I bring that same dedication to everything I do.
-                        If you're looking for a skilled and passionate Android App Developer/ Software Developer/
-                        Managerr let's connect! Contact Details Below.
-                    </p>
-
-                    <div class="tab_titles">
-                        <p class="tab-links active" onclick="opentab('skills')">
-                            Skills
-                        </p>
-                        <p class="tab-links" onclick="opentab('projects')">
-                            Projects
-                        </p>
-                        <p class="tab-links" onclick="opentab('experience')">
-                            Experience
-                        </p>
-                        <p class="tab-links" onclick="opentab('education')">
-                            Education
-                        </p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>
-                                <p><span>Programming In C/C++</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
-                                 <div class="bar">
-                                   <div class="skill-progress c" data-percentage="80"></div>
-                                 </div>
-                            </li>
-                          <li>
-                            <p><span>Android App Development</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
-                            <div class="bar">
-                              <div class="skill-progress android" data-percentage="70"></div>
-                              </div>
-                          </li>
-                          <li>
-                            <p><span>Programming In Java</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
-                            <div class="bar">
-                              <div class="skill-progress java" data-percentage="70"></div>
-                            </div>
-                          </li>
-                          <li>
-                            <p><span>Embedded System</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
-                             <div class="bar">
-                               <div class="skill-progress embedded" data-percentage="50"></div>
-                             </div>
-                           </li>
-                           <li>
-                            <p><span>Front End</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
-                             <div class="bar">
-                               <div class="skill-progress front-end" data-percentage="50"></div>
-                             </div>
-                           </li>
-                          <li>
-                           <p><span>Leading Team</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
-                            <div class="bar">
-                              <div class="skill-progress team" data-percentage="80"></div>
-                            </div>
-                          </li>
-                          <li>
-                            <p><span>Public Speaking</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
-                             <div class="bar">
-                               <div class="skill-progress public" data-percentage="80"></div>
-                             </div>
-                           </li>
-                        </ul>
-                    </div>                                     
-                    
-                    <div class="tab-contents" id="projects">
-                        <ul>
-                          <li>
-                            <span class="project-name">Smart Health Box</span><br>
-                            <span class="project-date">Jan 2023 - Mar 2023</span>
-                            Created an app which has two modes: manual and device. The app can connect to a device and predict heart disease.
-                          </li>
-                          <li>
-                            <span class="project-name">API for Heart Disease Prediction</span><br>
-                            <span class="project-date">Jan 2023 - Mar 2023</span>
-                            Created an API using Flask for heart disease prediction and hosted it so that it can be used in our app or website.<br>API URL: https://smart-health-bo2c.onrender.com
-                          </li>
-                          <li>
-                            <span class="project-name">ROBOCON</span><br>
-                            <span class="project-date">Apr 2022 - Jul 2022</span>
-                            Developed a bot to play the game 'LAGORI' for a national-level competition.
-                          </li>
-                          <li class="hidden-projects" style="display: none;">
-                            <span class="project-name">Apni Dukan</span><br>
-                            <span class="project-date">Nov 2019 - Feb 2020</span>
-                            Created a Windows application using Netbeans and SQL to buy and sell items.
-                          </li>
-                          <li class="hidden-projects" style="display: none;">
-                            <span class="project-name">VOCALS</span><br>
-                            <span class="project-date">Jun 2019 - Jul 2019</span>
-                            Developed a voice-activated local switch that can turn on/off surrounding electronics appliances using a mobile app.
-                          </li>
-                        </ul>
-                        <button id="show-more" onclick="toggleProjects()">See More</button>
-                    </div>                                        
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022 - Present</span><p>Assistant Co-ordinator KIIT Robotics Society</p></li>
-                            <li><span>2023 </span><p>Event Co-ordinator KONQUEST<br>Intra-College Level Robotics Competition</p></li>
-                            <li><span>October 2022 - Feburary 2023 </span><p>Worked as mentor for Basic Embedded System
-                                to KIIT Students</p></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><span class="degree-date">2020-Present</span>Kalinga Institute of Industrial Technology</li><br>
-                            <li><span class="degree-name">CBSE Senior Secondary Level Examination</span><span class="degree-date">2020</span>DAV Higher Secondary School</p></li><br>
-                            <li><span class="degree-name">CBSE Secondary Level Examination</span><span class="degree-date">2018</span>DAV Higher Secondary School</p></li>
-                        </ul>
-                    </div>
+<body class="dark-theme">
  
-                </div>
+    <div id="preloader">
+    </div>
+
+<!-- header section starts  -->
+<header>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div id="theme-toggler" class="fas fa-moon"></div>
+</header>
+<!-- header section ends -->
+
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="home1 image hidden">
+        <img src="images/bg.png" alt="">
+    </div>
+
+    <div class="content">
+        <span class="hello home1 hidden">hello</span>
+        <h3 class="home1 hidden"> I'M <span>Rohit Mundhra</span> </h3>
+
+        <h4 class="home1 hidden">I am a <span class="type">
+            <span>
+              <span>App Developer</span>
+              <span>Coder</span>
+              <span>Organizer</span>
+              <span>Student</span>
+            </span>
+          </span>
+        </h4>
+        <a href="#about" class="btn home1 hidden">about me</a>
+    </div>
+
+</section>
+<!-- home section ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <div class="row">
+        <div class="about_col_1 abt hidden">
+            <img src="images/user.png" alt="Profile Picture">
+        </div>
+        <div class="about_col_2 abt hidden"> 
+            <h1 class="heading"> <span>About</span> me </h1>
+            <p class="aboutme">
+                Hi, I'm Rohit Mundhra, a Student from Kalinga Institute of Industrial Technology. I work in
+                Android App Development, Embedded System, Managing Team, and Organizing Event, and I'm
+                passionate about Coding.
+                When I'm not working, you can find me , watching movies, and reading novels. I'm committed to my
+                work and time period, and I bring that same dedication to everything I do.
+                If you're looking for a skilled and passionate Android App Developer/ Software Developer/
+                Managerr let's connect! Contact Details Below.
+            </p>
+
+            <div class="tab_titles">
+                <p class="tab-links active" onclick="opentab('skills')">
+                    Skills
+                </p>
+                <p class="tab-links" onclick="opentab('projects')">
+                    Projects
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                    Education
+                </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>
+                        <p><span>Programming In C/C++</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
+                         <div class="bar">
+                           <div class="skill-progress c" data-percentage="80"></div>
+                         </div>
+                    </li>
+                  <li>
+                    <p><span>Android App Development</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
+                    <div class="bar">
+                      <div class="skill-progress android" data-percentage="70"></div>
+                      </div>
+                  </li>
+                  <li>
+                    <p><span>Programming In Java</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
+                    <div class="bar">
+                      <div class="skill-progress java" data-percentage="70"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p><span>Embedded System</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
+                     <div class="bar">
+                       <div class="skill-progress embedded" data-percentage="50"></div>
+                     </div>
+                   </li>
+                   <li>
+                    <p><span>Front End</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
+                     <div class="bar">
+                       <div class="skill-progress front-end" data-percentage="50"></div>
+                     </div>
+                   </li>
+                  <li>
+                   <p><span>Leading Team</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
+                    <div class="bar">
+                      <div class="skill-progress team" data-percentage="80"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p><span>Public Speaking</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
+                     <div class="bar">
+                       <div class="skill-progress public" data-percentage="80"></div>
+                     </div>
+                   </li>
+                </ul>
+            </div>                                     
+            
+            <div class="tab-contents" id="projects">
+                <ul>
+                  <li>
+                    <span class="project-name">Smart Health Box</span><br>
+                    <span class="project-date">Jan 2023 - Mar 2023</span>
+                    <p>Created an app which has two modes: manual and device. The app can connect to a device and predict heart disease.</p>
+                  </li>
+                  <li>
+                    <span class="project-name">API for Heart Disease Prediction</span><br>
+                    <span class="project-date">Jan 2023 - Mar 2023</span>
+                    <p>Created an API using Flask for heart disease prediction and hosted it so that it can be used in our app or website.<br>API URL: https://smart-health-bo2c.onrender.com</p>
+                  </li>
+                  <li>
+                    <span class="project-name">ROBOCON</span><br>
+                    <span class="project-date">Apr 2022 - Jul 2022</span>
+                    <p>Developed a bot to play the game 'LAGORI' for a national-level competition.</p>
+                  </li>
+                  <li class="hidden-projects" style="display: none;">
+                    <span class="project-name">Apni Dukan</span><br>
+                    <span class="project-date">Nov 2019 - Feb 2020</span>
+                    <p>Created a Windows application using Netbeans and SQL to buy and sell items.</p>
+                  </li>
+                  <li class="hidden-projects" style="display: none;">
+                    <span class="project-name">VOCALS</span><br>
+                    <span class="project-date">Jun 2019 - Jul 2019</span>
+                    <p>Developed a voice-activated local switch that can turn on/off surrounding electronics appliances using a mobile app.</p>
+                  </li>
+                </ul>
+                <button id="show-more" onclick="toggleProjects()">See More</button>
+            </div>                                        
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2022 - Present</span><p>Assistant Co-ordinator KIIT Robotics Society</p></li>
+                    <li><span>2023 </span><p>Event Co-ordinator KONQUEST<br>Intra-College Level Robotics Competition</p></li>
+                    <li><span>October 2022 - Feburary 2023 </span><p>Worked as mentor for Basic Embedded System
+                        to KIIT Students</p></li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><span class="degree-date">2020-Present</span>Kalinga Institute of Industrial Technology</li><br>
+                    <li><span class="degree-name">CBSE Senior Secondary Level Examination</span><span class="degree-date">2020</span>DAV Higher Secondary School</p></li><br>
+                    <li><span class="degree-name">CBSE Secondary Level Examination</span><span class="degree-date">2018</span>DAV Higher Secondary School</p></li>
+                </ul>
             </div>
         </div>
     </div>
+</section>
+<!-- about section ends -->
 
-    <!-- ----------------------services----------------------- -->
-    <div id="services" >
-        <div class="container">
-            <h1 class="subtitle serv hidden">My Services</h1>
-            <div class="services-list serv hidden">
-                <div>
-                    <i class="fa-brands fa-android"></i>
-                    <h2>Android App Developmet</h2>
-                    <p>Android app development is the process of creating software applications that run on the Android operating system.
-                        As a beginner in Android app development, 
-                        I have worked extensively with Java and XML. 
-                        I am currently expanding my knowledge by learning Flutter, a popular mobile app development framework. 
-                    </p>
-                    <p id="hidden-text1" style="display: none;">
-                        As part of my learning journey, I have contributed to a project on GitHub called Smart Health Box, 
-                        which involves calling APIs, implementing Bluetooth functionality, user authentication, and database management using Firebase. 
-                        This project has helped me gain practical experience in building real-world apps,
-                        and I am excited to continue honing my skills in mobile app development.
-                        You can check out some of my programming projects on my GitHub repository <a href="https://github.com/RohitMundhra123" target="_blank" style="font-size: 16px;"><u><b>Click Here</b></u></a>
-                    </p>
-                    </p>
-                    <button id="show-more1" onclick="toggleText1()">See more</button>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Programming</h2>
-                    <p>As a beginner programmer, I have a strong interest in programming and I am eager to learn more. 
-                        I have experience in several programming languages such as Java, C, C++, and Python. 
-                        My main focus has been on writing console applications and small scripts to automate tasks.
-                    </p>
-                    <p id="hidden-text2" style="display: none;">
-                        In addition to programming, I have experience with various software development tools such as PyCharm, Visual Studio Code, and Eclipse.
-                        I am also familiar with version control systems such as Git and have experience in working with GitHub.
-                        One of my notable projects is a Java application that simulates a shopping desktop app. 
-                        The application allows users to sell, buy and search products. 
-                        The program is built using Java classes and methods, and data is stored in a MySQL database.
-                        As a beginner programmer, I am always eager to learn more and improve my skills.
-                    </p>
-                    <button id="show-more2" onclick="toggleText2()">See more</button>
-                </div>
-            </div>
+<!-- service section starts  -->
+<section class="services" id="services">
 
+    <h1 class="heading box1 hidden"> <span>my</span> services </h1>
+
+    <div class="box-container">
+
+        <div class="box box1 hidden">
+            <span class="number">1</span>
+            <img src="images/s2.png" alt="">
+            <h3>Android App Developmet</h3>
+            <p>Android app development is the process of creating software applications that run on the Android operating system.
+                As a beginner in Android app development, 
+                I have worked extensively with Java and XML. 
+                I am currently expanding my knowledge by learning Flutter, a popular mobile app development framework. 
+            </p>
+            <p id="hidden-text1" style="display: none;">
+                As part of my learning journey, I have contributed to a project on GitHub called Smart Health Box, 
+                which involves calling APIs, implementing Bluetooth functionality, user authentication, and database management using Firebase. 
+                This project has helped me gain practical experience in building real-world apps,
+                and I am excited to continue honing my skills in mobile app development.
+                You can check out some of my programming projects on my GitHub repository<br><br></brr><a href="https://github.com/RohitMundhra123" target="_blank"><u><b>Click Here</b></u></a>
+            </p>
+            </p><br><br><br>
+            <button id="show-more1" onclick="toggleText1()">See more</button>
         </div>
+
+        <div class="box box1 hidden">
+            <span class="number">2</span>
+            <img src="images/s1.png" alt="">
+            <h3>Programming</h3>
+            <p>As a beginner programmer, I have a strong interest in programming and I am eager to learn more. 
+                I have experience in several programming languages such as Java, C, C++, and Python. 
+                My main focus has been on writing console applications and small scripts to automate tasks.
+            </p>
+            <p id="hidden-text2" style="display: none;">
+                In addition to programming, I have experience with various software development tools such as PyCharm, Visual Studio Code, and Eclipse.
+                I am also familiar with version control systems such as Git and have experience in working with GitHub.
+                One of my notable projects is a Java application that simulates a shopping desktop app. 
+                The application allows users to sell, buy and search products. 
+                The program is built using Java classes and methods, and data is stored in a MySQL database.
+                As a beginner programmer, I am always eager to learn more and improve my skills.
+            </p><br><br><br><br><br>
+            <button id="show-more2" onclick="toggleText2()">See more</button>
+        </div>
+
     </div>
 
-    <!-- <----------------------PORTFOLIO=------------------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="subtitle hidden">My Work</h1>
-            <div class="work-list">
-                <div class="work hidden">
-                    <img src="image/work-1.png">
-                    <div class="layer">
-                        <h3>Smart Health Box</h3>
-                        <p>Smart Health Box is a project that I developed as an Android app using Android Studio. 
-                            It is an innovative approach to healthcare technology that allows users to monitor their health and detect the early signs of heart disease. 
-                            The app collects data from the user, such as heart rate, blood pressure, and other vital signs. 
-                            The collected data is then analyzed using a custom machine learning model hosted as an API. 
-                            The model interprets the data to determine whether the user has a heart disease or not.
-                        </p>
-                        <a href="https://github.com/RohitMundhra123/Smart-Health-Box-Android-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work hidden">
-                    <img src="image/work-2.png">
-                    <div class="layer">
-                        <h3>Maze Solver</h3>
-                        <p>The "Maze Detection" project is a computer vision project that I developed in Jupyter Notebook using Python. 
-                            The project involved detecting road under construction and traffic lights in maze drawings with black lines. 
-                            The maze images were processed using OpenCV, an open-source computer vision library, and were analyzed to detect the 
-                            presence of a red line, which indicated the presence of a traffic light, and the absence of a line, which indicated that the road was under construction.</p>
-                        <a href="https://github.com/RohitMundhra123/OpenCv" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work hidden">
-                    <img src="image/work-3.png">
-                    <div class="layer">
-                        <h3>VOCALS</h3>
-                        <p>The "VOCALS" project is an IoT project that I developed using Arduino, Bluetooth HC-05 module, and MIT App Inventor. 
-                            The project involved controlling a local switch using voice commands through a mobile app. 
-                            The app was developed using MIT App Inventor, which enabled me to create an intuitive user interface with voice recognition capabilities. 
-                            The Arduino board was used to interface with the local switch, while the Bluetooth HC-05 module enabled wireless communication between the app and the Arduino board.
-                        </p>
-                        <a href="https://github.com/RohitMundhra123/VOCALS_IoT" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+</section>
+<!-- service section ends -->
 
-                <div class="work hidden hidden-portfolio">
-                    <img src="image/work-4.png">
-                    <div class="layer">
-                      <h3>Lowest Price Recomendation System</h3>
-                      <p>This is a Python GUI application that helps you find the lowest price for a product on various e-commerce platforms such as Amazon, Flipkart, and Nykaa. 
-                        The application reads data from a CSV file and compares the prices of the given product across the platforms to find the one with the lowest price.</p>
-                      <a href="https://github.com/RohitMundhra123/Lowest-Price-Recomendation" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>
+<!-- portfolio section starts  -->
+<section class="portfolio" id="portfolio">
 
-                <div class="work hidden hidden-portfolio">
-                    <img src="image/work-5.png">
-                    <div class="layer">
-                      <h3>Heart Disease Prediction API</h3>
-                      <p>This API provides a machine learning model to predict the likelihood of heart disease based on various input features.
-                        This API is currently deployed on Render at <br><b>https://smart-health-bo2c.onrender.com/predict
-                        </p></b>
-                      <a href="https://github.com/RohitMundhra123/Heart-Disease-Prediction-API" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-                  
-                  <div class="work hidden hidden-portfolio">
-                    <img src="image/work-6.png">
-                    <div class="layer">
-                      <h3>Morse Code Emulator</h3>
-                      <p>This project is a Morse Code Emulator using an Arduino, push button, and seven segment display. It was designed and tested using Tinkercad.</p>
-                      <a href="https://github.com/RohitMundhra123/Morse-Code-Emulator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>         
-                </div>
-            <a href="#" class="btn" onclick="togglePortfolio(); return false;">See More</a>
-        </div>
+    <h1 class="heading hidden"> <span>my</span> portfolio </h1>
+
+    <div class="button-container hidden">
+        <div class="btn" data-filter="all">all</div>
+        <div class="btn" data-filter="app">android app</div>
+        <div class="btn" data-filter="code">Code</div>
+        <div class="btn" data-filter="hardware">hardware</div>
+        <div class="btn" data-filter="api">API</div>
     </div>
-    <!-- ----------------------------contact------------------------------ -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left cont hidden">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><a href="mailto:rohitm1924@gmail.com"><i class="fa-solid fa-paper-plane"></a></i>rohitm1924@gmail.com</p>
-                    <p><a href="tel:+917726021453"><i class="fa-solid fa-phone-volume"></a></i>7726021453</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/rohit.mundhra.902?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://instagram.com/mundhra243?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/rohitmundhra2002" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="image/Rohit Mundhra.pdf" download class="btn2">Download CV</a>
-                </div>
-                <div class="contact-right cont hidden">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn2">Submit</button>
-                    </form>
-                    <span id="mssg"></span>
-                </div>
+
+    <div class="image-container">
+
+        <div class="box app box2 hidden ">
+            <img src="images/work-1.png" alt="">
+            <div class="info">
+                <h3>Smart Health Box: Android App</h3>
+                <a href="https://github.com/RohitMundhra123/Smart-Health-Box-Android-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
+
+        <div class="box code box2 hidden">
+            <img src="images/work-2.png" alt="">
+            <div class="info">
+                <h3>Maze Detection: Using OpenCV</h3>
+                <a href="https://github.com/RohitMundhra123/OpenCV" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="box code hardware box2 hidden">
+            <img src="images/work-6.png" alt="">
+            <div class="info">
+                <h3>Morse Code Emulator</h3>
+                <a href="https://github.com/RohitMundhra123/Morse-Code-Emulator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="box code box2 hidden">
+            <img src="images/work-4.png" alt="">
+            <div class="info">
+                <h3>Lowest Price Recommendation System</h3>
+                <a href="https://github.com/RohitMundhra123/Lowest-Price-Recomendation" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="box hardware box2 hidden">
+            <img src="images/work-3.png" alt="">
+            <div class="info">
+                <h3>VOCALS -Voice Automated Local Switch</h3>
+                <a href="https://github.com/RohitMundhra123/VOCALS_IoT" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="box api box2 hidden">
+            <img src="images/work-5.png" alt="">
+            <div class="info">
+                <h3>Heart Disease Prediction API</h3>
+                <a href="https://github.com/RohitMundhra123/Heart-Disease-Prediction-API" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+<section class="contact" id="contact">
+
+    <div class="row">
+            <div class="contact-left cont hidden">
+                <h1 class="heading"> <span>Contact</span> Me </h1>
+                <p style="text-transform: lowercase;"><a href="mailto:rohitm1924@gmail.com"><i class="fa-solid fa-paper-plane"></a></i>rohitm1924@gmail.com</p>
+                <p><a href="tel:+917726021453"><i class="fa-solid fa-phone-volume"></a></i>7726021453</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rohit.mundhra.902?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/mundhra243?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rohitmundhra2002" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Rohit Mundhra.pdf" download class="btn2">Download CV</a>
+            </div>
+            <div class="contact-right cont hidden">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div> 
         <div class="copyright">
-            <p>Copyright © Rohit Mundhra. </p>
-        </div>
-    </div>
+            Copyright © Rohit Mundhra.
+        </div> 
+</section>
+<!-- contact section ends -->
 
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Android App Developer", " Organizer", " Coder", " Student"],
-            typeSpeed: 100,
-            backSpeed: 50,
-            loop: true
-        })
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="index.js"></script>
+
 </body>
-
 </html>
