@@ -86,34 +86,32 @@
             <div class="tab-contents active-tab" id="skills">
                 <ul>
                     <li>
-                        <p><span>Flutter Development</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
-                         <div class="bar">
-                           <div class="skill-progress flutter" data-percentage="80"></div>
-                         </div>
+                        <p><span>Flutter Development</span><span class="skill-list" style="color: grey;"> (Skillful)</span></p>     
+                    </li>
+                    <li>
+                        <p><span>Dart</span><span class="skill-list
+                        " style="color: grey;"> (Intermediate)</span></p>      
+                    </li>
+                    <li>
+                        <p><span>API</span><span class="skill-list" style="color: grey;"> (Intermediate)</span></p>              
                     </li>
                   <li>
-                    <p><span>Programming In Java</span><span class="skill-list" style="float: right; color: grey;">Intermediate</span></p>
-                    <div class="bar">
-                      <div class="skill-progress java" data-percentage="70"></div> 
-                    </div>
+                    <p><span>Programming In Java</span><span class="skill-list" style="color: grey;"> (Intermediate)</span></p>
                   </li>
-                  <li>
-                    <p><span>Embedded System / IoT</span><span class="skill-list" style="float: right; color: grey;">Begginer</span></p>
-                     <div class="bar">
-                       <div class="skill-progress embedded" data-percentage="50"></div>
-                     </div>
+                    <li>
+                    <p><span>Public Speaking</span><span class="skill-list" style="color: grey;"> (Skillful)</span></p>           
                    </li>
-                  <li>
-                    <p><span>Public Speaking</span><span class="skill-list" style="float: right; color: grey;">Skillful</span></p>
-                     <div class="bar">
-                       <div class="skill-progress public" data-percentage="80"></div>
-                     </div>
-                   </li>
+                 
                 </ul>
             </div>                                     
             
             <div class="tab-contents" id="projects">
                 <ul>
+                    <li>
+                        <span class="project-name">AI Companion App</span><br>
+                        <span class="project-date">Jan 2024 - Apr 2024</span>
+                        <p>Developed a mobile application integrating AI capabilities through APIs. Implemented voice command functionality for seamless interaction with the app. Designed intuitive user interfaces to enhance user experience.</p>
+                    </li>
                     <li>
                         <span class="project-name">MediMate Reminder Box</span><br>
                         <span class="project-date">Oct 2023 - Dec 2023</span>
@@ -124,7 +122,7 @@
                         <span class="project-date">Sept 2023 - Sept 2023</span>
                         <p>A Audio Player app using Flutter. This is same as the app we find in our Android App where it loads all the audio files in our local storage and you can play, pause, skip the songs.</p>
                     </li>
-                  <li>
+                    <li class="hidden-projects" style="display: none;">
                     <span class="project-name">Smart Health Box</span><br>
                     <span class="project-date">Jan 2023 - Mar 2023</span>
                     <p>Created an app which has two modes: manual and device. The app can connect to a device and predict heart disease.</p>
@@ -134,28 +132,21 @@
                     <span class="project-date">Jan 2023 - Mar 2023</span>
                     <p>Created an API using Flask for heart disease prediction and hosted it so that it can be used in our app or website.<br>API URL: https://smart-health-bo2c.onrender.com</p>
                   </li>
-                  <li class="hidden-projects" style="display: none;">
-                    <span class="project-name">ROBOCON</span><br>
-                    <span class="project-date">Apr 2022 - Jul 2022</span>
-                    <p>Developed a bot to play the game 'LAGORI' for a national-level competition.</p>
-                  </li>
-                 
-                 
                 </ul>
                 <button id="show-more" onclick="toggleProjects()">See More</button>
             </div>                                        
 
             <div class="tab-contents" id="experience">
                 <ul>
-                    <li><span>Nov-2023 - Present</span><p>Flutter Developer at LernX</p></li>
-                    <li><span>Jul-2023 - Sept-2023</span><p>App Developer Intern at InternSavy</p></li>
+                    <li><span>Nov-2023 - Present</span><p>Flutter Developer at LernX</p></li><br><br>
+                    <li><span>Jul-2023 - Sept-2023</span><p>App Developer Intern at InternSavy</p></li><br><br>
                     <li><span>2023 - Present</span><p>Co-ordinator KIIT Robotics Society</p></li>
   </ul>
             </div>
 
             <div class="tab-contents" id="education">
                 <ul>
-                    <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><span class="degree-date">2020-Present</span>Kalinga Institute of Industrial Technology</li><br>
+                    <li><span class="degree-name">B.Tech in Computer Science and Engineering</span><span class="degree-date">2020-2024</span>Kalinga Institute of Industrial Technology</li><br>
                     <li><span class="degree-name">CBSE Senior Secondary Level Examination</span><span class="degree-date">2020</span>DAV Higher Secondary School</p></li><br>
                     <li><span class="degree-name">CBSE Secondary Level Examination</span><span class="degree-date">2018</span>DAV Higher Secondary School</p></li>
                 </ul>
@@ -221,17 +212,19 @@
 
     <h1 class="heading hidden"> <span>my</span> portfolio </h1>
 
-    <div class="button-container hidden">
-        <div class="btn" data-filter="all">all</div>
-        <div class="btn" data-filter="app">android app</div>
-        <div class="btn" data-filter="hardware">hardware</div>
-        <div class="btn" data-filter="api">API</div>
-    </div>
-
     <div class="image-container">
 
         <div class="box app box2 hidden ">
-            <img src="images/work-1.png" alt="">
+            <img src="images/aicompanion.png" alt="">
+            <div class="info">
+                <h3>AI Companion: An Android App</h3><br>
+                <!-- <a href="https://github.com/RohitMundhra123/Medimate-ReminderBox" target="_blank"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+        </div>
+
+        <div class="box app box2 hidden ">
+            <img src="images/medimatereminder.png" alt="">
             <div class="info">
                 <h3>Medimate ReminderBox: Android App</h3>
                 <a href="https://github.com/RohitMundhra123/Medimate-ReminderBox" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -239,7 +232,7 @@
         </div>
 
         <div class="box app box2 hidden ">
-            <img src="images/work-1.png" alt="">
+            <img src="images/audioplayer.png" alt="">
             <div class="info">
                 <h3>Sound Player: Android App</h3>
                 <a href="https://github.com/RohitMundhra123/Audio-Player" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -247,23 +240,15 @@
         </div>
 
         <div class="box app box2 hidden ">
-            <img src="images/work-1.png" alt="">
+            <img src="images/smarthealth.png" alt="">
             <div class="info">
                 <h3>Smart Health Box: Android App</h3>
                 <a href="https://github.com/RohitMundhra123/Smart-Health-Box-Android-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
 
-        <div class="box code hardware box2 hidden">
-            <img src="images/work-6.png" alt="">
-            <div class="info">
-                <h3>Morse Code Emulator Arduino</h3>
-                <a href="https://github.com/RohitMundhra123/Morse-Code-Emulator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-
         <div class="box api box2 hidden">
-            <img src="images/work-5.png" alt="">
+            <img src="images/api.png" alt="">
             <div class="info">
                 <h3>Heart Disease Prediction API</h3>
                 <a href="https://github.com/RohitMundhra123/Heart-Disease-Prediction-API" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>

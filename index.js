@@ -82,7 +82,7 @@ var skills = document.querySelectorAll(".skill-progress");
 
 function animateBars() {
   for (var i = 0; i < skills.length; i++) {
-    if (isElementInViewport(skills[i])) {
+    if (isElementInViewport(skills[i]) && !skills[i].classList.contains("animate")) {
       var percentage = skills[i].getAttribute("data-percentage");
       skills[i].style.width = percentage + "%";
       skills[i].classList.add("animate");
@@ -90,7 +90,19 @@ function animateBars() {
   }
 }
 
-window.addEventListener('scroll', animateBars);
+function debounce(func, wait) {
+  let timeout;
+  return function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, arguments), wait);
+  };
+}
+
+window.addEventListener('scroll', debounce(animateBars, 50));
+
+// Initial call to animate bars in case some are already in the viewport
+animateBars();
+
 
 
 
